@@ -24,7 +24,7 @@ function createWindow () {
 
   // and load the index.html of the app.
   win.loadFile('aidn.jp/mikutap/index.html')
-  win.webContents.toggleDevTools()
+  // win.webContents.toggleDevTools()
 }
 
 // This method will be called when Electron has finished
