@@ -16,7 +16,3 @@ Clone this project and run:
 yarn install
 yarn dist
 ```
-
-# Known Issues
-
- - App crashes when pressing media keys. Related to https://github.com/wilix-team/iohook/issues/246
