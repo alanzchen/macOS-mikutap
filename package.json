@@ -1,0 +1,36 @@
+{
+  "name": "Mikutap",
+  "version": "1.0.0",
+  "description": "A miku tap app for macOS ",
+  "mac": {
+    "category": "public.app-category.entertainment"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "author": "Alan Chen",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^8.0.0",
+    "electron-builder": "^22.7.0"
+  },
+  "dependencies": {
+    "iohook": "^0.6.6"
+  },
+  "iohook": {
+    "targets": [
+      "electron-76"
+    ],
+    "platforms": [
+      "darwin"
+    ],
+    "arches": [
+      "x64"
+    ]
+  }
+}
