@@ -6,7 +6,7 @@ This app will run as your wallpaper and monitor your keystrokes on any other app
 
 # Installation
 
-Downlaod the binary in releases and run. Please grant the permission when macOS asks for it and relaunch the app.
+Downlaod the binary in [releases](https://github.com/alanzchen/macOS-mikutap/releases/) and run. Please grant the permission when macOS asks for it and relaunch the app.
 
 # Build from source
 
