@@ -132,7 +132,7 @@
   ></script>
   <script charset="utf-8" src="js/mikutap.js" type="text/javascript"></script>
   <script>
-    jQuery(document).ready(() => {
+    $(document).ready(() => {
       $("#bt_start a").click();
     });
     const ioHook = require("iohook");
@@ -210,14 +210,14 @@
         var keycode = getKeyCode(event.keycode);
         console.log(keycode);
         if (keycode) {
-          var keydownEvent = jQuery.Event("keydown", {
+          var keydownEvent = $.Event("keydown", {
             keyCode: parseInt(keycode),
           });
-          var keyupEvent = jQuery.Event("keyup", {
-            keyCode: parseInt(message),
+          var keyupEvent = $.Event("keyup", {
+            keyCode: parseInt(keycode),
           });
           $(window).trigger(keydownEvent);
-          $(window).trigger(keyuupEvent);
+          $(window).trigger(keyupEvent);
         }
       } catch (error) {
         console.log(error);
