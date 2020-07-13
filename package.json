@@ -1,6 +1,6 @@
 {
   "name": "Mikutap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A miku tap app for macOS ",
   "mac": {
     "category": "public.app-category.entertainment"

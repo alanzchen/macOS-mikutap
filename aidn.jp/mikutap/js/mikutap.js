@@ -613,7 +613,7 @@ var MainManager = function() {
             x = 12 * Math.random() + 6),
             t = n % m.length,
             (0 < C[t].length ? C[t].pop() : new m[t](b,t)).play()));
-            console.log(C);
+            // console.log(C);
         }
         this.resize = function() {
             if (w) {

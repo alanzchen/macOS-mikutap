@@ -1,20 +1,11 @@
 'use strict';
 
 const { app, BrowserWindow, screen } = require('electron')
-const ioHook = require('iohook');
-
-function getKeyCode(char) {
-  var keyCode = char.charCodeAt(0);
-  if(keyCode > 90) {  // 90 is keyCode for 'z'
-    return keyCode - 32;
-  }
-  return keyCode;
-}
+const console = require('console')
 
 function createWindow () {
   // Create the browser window.
   const { width, height } = screen.getPrimaryDisplay().size
-  console.log(screen.getPrimaryDisplay().size)
   const win = new BrowserWindow({
     type: "desktop",
     width: width,
@@ -27,19 +18,10 @@ function createWindow () {
     enableLargerThanScreen: true,
     hasShadow: false
   })
-  ioHook.on('keypress', ({ keychar }) => {
-    try {
-      var k = String.fromCharCode(keychar)
-      var keycode = getKeyCode(k)
-      win.webContents.send("ping", keycode)
-    } catch (error) {
-      console.log(error)
-    }
-  });
+
   // and load the index.html of the app.
   win.loadFile('aidn.jp/mikutap/index.html')
   // win.webContents.toggleDevTools()
-  ioHook.start(true)
 }
 
 // This method will be called when Electron has finished
