@@ -3,12 +3,9 @@
 const { app, BrowserWindow, screen } = require('electron')
 const console = require('console')
 
-
-
 function createWindow () {
   // Create the browser window.
   const { width, height } = screen.getPrimaryDisplay().size
-  console.log(screen.getPrimaryDisplay().size)
   const win = new BrowserWindow({
     type: "desktop",
     width: width,
