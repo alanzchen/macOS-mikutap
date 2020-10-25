@@ -11,7 +11,8 @@ function createWindow () {
     width: width,
     height: height,
     webPreferences: {
-      nodeIntegration: true
+      nodeIntegration: true,
+      backgroundThrottling: false
     },
     frame: false,
     skipTaskbar: true,
