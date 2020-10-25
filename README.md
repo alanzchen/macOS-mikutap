@@ -18,3 +18,7 @@ Clone this project and run:
 yarn install
 yarn dist
 ```
+
+# Icon
+
+Icon by [Rebecca Sue](https://www.rbcsue.com).
